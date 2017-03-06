@@ -8,9 +8,9 @@ namespace De_gokkers_groep_16
 {
     public class Bet
     {
-        public int Amount;   //Het bedrag van de weddenschap.
+        public int Amount;          //Het bedrag van de weddenschap.
         public Suricate Timon;      //Het nummer van de hond waarop weddenschap is afgesloten.
-        public Guy Bettor;   //De gokker die gewed heeft.
+        public Guy Bettor;          //De gokker die gewed heeft.
         internal bool isBetOn;
 
 
@@ -22,6 +22,7 @@ namespace De_gokkers_groep_16
             //this.isBetOn = false;
 
         }
+
         public string GetDescription()
         {
             //Retourneer een string die aangeeft wie de weddenschap heeft gedaan,
@@ -43,11 +44,13 @@ namespace De_gokkers_groep_16
             payout += this.Amount;
             Winner.Cash += payout;
         }
+
         public void Lose()
         {
             Bettor.Cash -= this.Amount;
             Bettor.mytextbox.Text = Convert.ToString(this.Amount);
         }
+
         public void clearBet()
         {
             this.Amount = 0;

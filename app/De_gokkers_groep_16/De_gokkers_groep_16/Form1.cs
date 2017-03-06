@@ -190,19 +190,24 @@ namespace De_gokkers_groep_16
             }
             ButtonGamble.Hide();
             raceStart(pictureBox2, racers, textBoxWinner);
+
             Thread.Sleep(1000);
+
             backToStart(pictureBox2, racers);
+
             for (int i2 = 0; i2 < racers.Length; i2++)
             {
                 racers[i2].MyPictureBox.Image = De_gokkers_groep_16.Properties.Resources.stokstaand;
                 racers[i2].MyPictureBox.Refresh();
             }
+
             if (fer.MyBetstr == textBoxWinner.Text)
             {
                 //int money = Convert.ToInt32(textbox69.Text);
                 //fer.Cash += money * 2;
                 bet[0].PayOut(fer);
             }
+
             else if (lida.MyBetstr == textBoxWinner.Text)
             {
                 //int money = Convert.ToInt32(textbox5.Text);
@@ -210,6 +215,7 @@ namespace De_gokkers_groep_16
                 bet[1].PayOut(lida);
 
             }
+
             else if (sietse.MyBetstr == textBoxWinner.Text)
             {
                 //int money = Convert.ToInt32(textBox3.Text);
@@ -217,21 +223,27 @@ namespace De_gokkers_groep_16
                 bet[2].PayOut(sietse);
             }
 
-            fer.displayMoney(FerMoney);
-            lida.displayMoney(LindaMoney);
-            sietse.displayMoney(SietseMoney);
+            fer.displayMoney    (FerMoney);
+            lida.displayMoney   (LindaMoney);
+            sietse.displayMoney (SietseMoney);
+
                 this.bet[0].Amount = 0;
                 this.bet[1].Amount = 0;
                 this.bet[2].Amount = 0;
+
             textbox69.Text = "";
-            textBox3.Text = "";
-            textbox5.Text = "";
+            textBox3.Text  = "";
+            textbox5.Text  = "";
+
             ButtonStart.Show();
             ButtonGamble.Show();
+
             textBoxWinner.ResetText();
+
             bet[0].clearBet();
             bet[1].clearBet();
             bet[2].clearBet();
+
             ButtonStart.Hide();
         }
 
@@ -262,37 +274,37 @@ namespace De_gokkers_groep_16
                     this.winner = "bert";
                     racers[0].bwinner = true;
                     textBoxWinner.Text = racers[0].name;
-
                 }
+
                 //total1 += racers[1].Run();
                 if (racers[1].RaceTrackLength == total2 && winner0 == false || winner2 == false || winner3 == false)
                 {
                     this.winner = "ernie";
                     racers[1].bwinner = true;
                     textBoxWinner.Text = racers[1].name;
-
                 }
+
                 //total2 += racers[2].Run();
                 if (racers[2].RaceTrackLength == total2 && winner1 == false || winner0 == false || winner3 == false)
                 {
                     this.winner = "bassie";
                     racers[2].bwinner = true;
                     textBoxWinner.Text = racers[2].name;
-
                 }
+
                 //total3 += racers[3].Run();
                 if (racers[3].RaceTrackLength == total3 && winner1 == false || winner2 == false || winner0 == false)
                 {
                     this.winner = "adriaan";
                     racers[3].bwinner = true;
                     textBoxWinner.Text = racers[3].name;
-
                 }
 
 
 
 
-            } while (total0 <= racers[0].RaceTrackLength || total1 <= racers[1].RaceTrackLength || total2 <= racers[2].RaceTrackLength || total3 <= racers[3].RaceTrackLength);
+            }
+            while (total0 <= racers[0].RaceTrackLength || total1 <= racers[1].RaceTrackLength || total2 <= racers[2].RaceTrackLength || total3 <= racers[3].RaceTrackLength);
             int i = -1;
             foreach (Suricate suricate in racers)
             {
@@ -304,19 +316,11 @@ namespace De_gokkers_groep_16
                     textBoxWinner.Text = racers[i].name;
                 }
             }
-
-
-
-            //racers[0].Run();
-            //racers[1].Run();
-            //racers[2].Run();
-            //racers[3].Run();
-
-
-
-
+   
         }
-        public void raceStart(PictureBox track, Suricate[] racers, TextBox textBoxWinner) {
+
+            public void raceStart(PictureBox track, Suricate[] racers, TextBox textBoxWinner)
+            {
             // PictureBox racer0, PictureBox racer1, PictureBox racer2, PictureBox racer3,
             //Random r = new Random();
            
@@ -326,21 +330,25 @@ namespace De_gokkers_groep_16
                 racers[1].Run(r, track);
                 racers[2].Run(r, track);
                 racers[3].Run(r, track);
+
                 if (racers[0].Run(r, track))
                 {
                     textBoxWinner.Text = racers[0].name;
                     this.wiener = racers[0].name;
                 }
+
                 else if (racers[1].Run(r, track))
                 {
                     textBoxWinner.Text = racers[1].name;
                     this.wiener = racers[1].name;
                 }
+
                 else if (racers[2].Run(r, track))
                 {
                     textBoxWinner.Text = racers[2].name;
                     this.wiener = racers[2].name;
                 }
+
                 else if (racers[3].Run(r, track))
                 {
                     textBoxWinner.Text = racers[3].name;
@@ -353,6 +361,7 @@ namespace De_gokkers_groep_16
             !racers[2].Run(r, track) &&
             !racers[3].Run(r, track)
             );
+
             textBoxWinner.Text = this.wiener;
         }
         public void backToStart (PictureBox track, Suricate[] racers)

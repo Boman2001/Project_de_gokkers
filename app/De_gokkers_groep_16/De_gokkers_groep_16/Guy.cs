@@ -9,8 +9,8 @@ namespace De_gokkers_groep_16
 {
     public class Guy
     {
-        public string Name;  // De naam van de gokker
-        public int Cash;     // Het saldo van de gokker
+        public string Name;        // De naam van de gokker
+        public int Cash;           // Het saldo van de gokker
         public string MyBetstr;    // Een instantie van Bet()
         internal Bet MyBet;
         public RadioButton MyRadiobutton;
@@ -30,7 +30,7 @@ namespace De_gokkers_groep_16
         }
 
         //Deze twee velden zijn de gokkers GUI controls op het formulier
-      public void displayMoney(TextBox money)
+        public void displayMoney(TextBox money)
         {
             string cashString = Convert.ToString(this.Cash);
             money.Text = cashString ;

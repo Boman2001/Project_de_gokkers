@@ -18,6 +18,7 @@ namespace De_gokkers_groep_16
         public Random Randomizer;               //Een instantie van Random (= Willekeurig) 
         public string name;
         internal bool bwinner = false;
+
         public Suricate(string id, PictureBox runner, PictureBox track)
         {
 
@@ -26,6 +27,7 @@ namespace De_gokkers_groep_16
             this.MyPictureBox = runner;
 
         }
+
         public int Run(PictureBox track)
         {
             //Ga willekeurig 1, 2, 3 of 4 posities naar voren.
@@ -38,14 +40,18 @@ namespace De_gokkers_groep_16
 
                 int step = steps.Next(1, 8);
                 total += step;
+
                 Thread.Sleep(5);
+
                 //this.MyPictureBox.Location = new Point(MyPictureBox.Location.X +, this.MyPictureBox.Location.Y);
                 MyPictureBox.Location = new Point(this.MyPictureBox.Location.X + step, this.MyPictureBox.Location.Y);
+
                 Application.DoEvents();
-            //} while (total <= RaceTrackLength);
-            return step;
+            
+                return step;
 
         }
+
         public bool Run(Random r, PictureBox track)
         {
             int min = 1, max = 4, RaceTrackPos = 0; ;
