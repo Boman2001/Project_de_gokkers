@@ -30,9 +30,9 @@ namespace De_gokkers_groep_16
             InitializeComponent();
             // initaliseert de elementen van de form
             //players en racers maken 
-            fer = new Guy("Fer", 45, textbox69, textBox9);
-            lida = new Guy("Lidy", 75, textBox3, textBox8);
-            sietse = new Guy("Sietse", 50, textbox5, textBox7);
+            fer = new Guy("Fer", 45, betFer, textboxfer2);
+            lida = new Guy("Lidy", 75, textBox3, textboxlinda2);
+            sietse = new Guy("Sietse", 50, textbox5, textboxsietse2);
 
             racers[0] = new Suricate("Bert", runner1, pictureBox2);
             racers[1] = new Suricate("Ernie", runner2, pictureBox2);
@@ -66,9 +66,9 @@ namespace De_gokkers_groep_16
         private void ButtonGamble_Click(object sender, EventArgs e)
         {
 
-            TextBox ferText = textBox9;
-            TextBox sietseText = textBox7;
-            TextBox lindaText = textBox8;
+            TextBox ferText = textboxfer2;
+            TextBox sietseText = textboxsietse2;
+            TextBox lindaText = textboxlinda2;
             //spelers de textboxgeven waarin hun bod komt te staan 
             fer.displayMoney(FerMoney);
             lida.displayMoney(LindaMoney);
@@ -76,7 +76,7 @@ namespace De_gokkers_groep_16
 
 
 
-            if (name_1.Checked)
+            if (name_fer.Checked)
             {
                 // leest het input veldje en verwerkt het
                 decimal wed = numericUpDown1.Value;
@@ -91,7 +91,7 @@ namespace De_gokkers_groep_16
 
 
             }
-            else if (name_3.Checked)
+            else if (name_sietse.Checked)
             {
                 
                 decimal wed = numericUpDown1.Value;
@@ -103,7 +103,7 @@ namespace De_gokkers_groep_16
 
 
             }
-            else if (name_2.Checked)
+            else if (name_linda.Checked)
             {
                 
                 decimal wed = numericUpDown1.Value;
@@ -117,7 +117,7 @@ namespace De_gokkers_groep_16
             fer.displayMoney(FerMoney);
             lida.displayMoney(LindaMoney);
             sietse.displayMoney(SietseMoney);
-            if (textbox69.Text != "0" && textBox3.Text != "0" && textbox5.Text !="0" )
+            if (betFer.Text != "0" && textBox3.Text != "0" && textbox5.Text !="0" )
             {
                 ButtonStart.Show();
 
@@ -132,26 +132,26 @@ namespace De_gokkers_groep_16
             string bassie  = "Bassie" ;
             string adriaan = "Adriaan";
 
-            if (radioButton6.Checked)
+            if (radioButtonbert.Checked)
             {
                 player.Text = bert;
                 Bettor.MyBetstr = bert;
 
 
             }
-            else if (radioButton5.Checked)
+            else if (radioButtonernie.Checked)
             {
                 player.Text = ernie;
                 Bettor.MyBetstr = ernie;
 
             }
-            else if (radioButton4.Checked)
+            else if (radioButtonbassie.Checked)
             {
                 player.Text = bassie;
                 Bettor.MyBetstr = bassie;
 
             }
-            else if (radioButton7.Checked)
+            else if (radioButtonadriaan.Checked)
             {
                 player.Text = adriaan;
                 Bettor.MyBetstr = adriaan;
@@ -203,7 +203,7 @@ namespace De_gokkers_groep_16
 
             if (fer.MyBetstr == textBoxWinner.Text)
             {
-                //int money = Convert.ToInt32(textbox69.Text);
+                //int money = Convert.ToInt32(betFer.Text);
                 //fer.Cash += money * 2;
                 bet[0].PayOut(fer);
             }
@@ -231,7 +231,7 @@ namespace De_gokkers_groep_16
                 this.bet[1].Amount = 0;
                 this.bet[2].Amount = 0;
 
-            textbox69.Text = "";
+            betFer.Text = "";
             textBox3.Text  = "";
             textbox5.Text  = "";
 

@@ -86,6 +86,7 @@
   <ItemGroup>
     <Content Include="Pictures\runnings.png" />
     <Content Include="Pictures\superstokstaart.png" />
+    <None Include="Resources\debaan.png" />
     <None Include="Resources\superstokstaart.png" />
     <None Include="Resources\runnings.png" />
   </ItemGroup>

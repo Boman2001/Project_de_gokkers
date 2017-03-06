@@ -32,50 +32,50 @@ namespace De_gokkers_groep_16
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.ButtonGamble = new System.Windows.Forms.Button();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.op1 = new System.Windows.Forms.TextBox();
+            this.op2 = new System.Windows.Forms.TextBox();
+            this.op3 = new System.Windows.Forms.TextBox();
+            this.textboxfer2 = new System.Windows.Forms.TextBox();
+            this.textboxlinda2 = new System.Windows.Forms.TextBox();
+            this.textboxsietse2 = new System.Windows.Forms.TextBox();
+            this.textboxlinda1 = new System.Windows.Forms.TextBox();
+            this.textboxfer1 = new System.Windows.Forms.TextBox();
+            this.textboxsietse1 = new System.Windows.Forms.TextBox();
+            this.labeladriaan = new System.Windows.Forms.Label();
             this.runner4 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.labelbassie = new System.Windows.Forms.Label();
             this.runner3 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelernie = new System.Windows.Forms.Label();
             this.ButtonStart = new System.Windows.Forms.Button();
             this.runner2 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelbert = new System.Windows.Forms.Label();
             this.runner1 = new System.Windows.Forms.PictureBox();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.radioButtonadriaan = new System.Windows.Forms.RadioButton();
+            this.radioButtonbassie = new System.Windows.Forms.RadioButton();
+            this.radioButtonernie = new System.Windows.Forms.RadioButton();
+            this.radioButtonbert = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.name_3 = new System.Windows.Forms.RadioButton();
-            this.name_2 = new System.Windows.Forms.RadioButton();
+            this.name_sietse = new System.Windows.Forms.RadioButton();
+            this.name_linda = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBoxWinner = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.name_1 = new System.Windows.Forms.RadioButton();
+            this.name_fer = new System.Windows.Forms.RadioButton();
             this.LindaMoney = new System.Windows.Forms.TextBox();
             this.SietseMoney = new System.Windows.Forms.TextBox();
             this.FerMoney = new System.Windows.Forms.TextBox();
             this.textbox5 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.Label();
-            this.textbox69 = new System.Windows.Forms.Label();
+            this.betFer = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.roadbert = new System.Windows.Forms.PictureBox();
+            this.roadadriaan = new System.Windows.Forms.PictureBox();
+            this.roadbassie = new System.Windows.Forms.PictureBox();
+            this.roadernie = new System.Windows.Forms.PictureBox();
+            this.finish = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.runner4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.runner3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.runner2)).BeginInit();
@@ -84,11 +84,11 @@ namespace De_gokkers_groep_16
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roadbert)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roadadriaan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roadbassie)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roadernie)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.finish)).BeginInit();
             this.SuspendLayout();
             // 
             // ButtonGamble
@@ -101,102 +101,102 @@ namespace De_gokkers_groep_16
             this.ButtonGamble.UseVisualStyleBackColor = true;
             this.ButtonGamble.Click += new System.EventHandler(this.ButtonGamble_Click);
             // 
-            // textBox10
+            // op1
             // 
-            this.textBox10.Enabled = false;
-            this.textBox10.ForeColor = System.Drawing.Color.Black;
-            this.textBox10.Location = new System.Drawing.Point(646, 469);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(20, 20);
-            this.textBox10.TabIndex = 80;
-            this.textBox10.Text = "Op";
+            this.op1.Enabled = false;
+            this.op1.ForeColor = System.Drawing.Color.Black;
+            this.op1.Location = new System.Drawing.Point(646, 469);
+            this.op1.Name = "op1";
+            this.op1.Size = new System.Drawing.Size(20, 20);
+            this.op1.TabIndex = 80;
+            this.op1.Text = "Op";
             // 
-            // textBox11
+            // op2
             // 
-            this.textBox11.Enabled = false;
-            this.textBox11.ForeColor = System.Drawing.Color.Black;
-            this.textBox11.Location = new System.Drawing.Point(631, 54);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(20, 20);
-            this.textBox11.TabIndex = 79;
-            this.textBox11.Text = "Op";
-            this.textBox11.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
+            this.op2.Enabled = false;
+            this.op2.ForeColor = System.Drawing.Color.Black;
+            this.op2.Location = new System.Drawing.Point(631, 54);
+            this.op2.Name = "op2";
+            this.op2.Size = new System.Drawing.Size(20, 20);
+            this.op2.TabIndex = 79;
+            this.op2.Text = "Op";
+            this.op2.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
             // 
-            // textBox12
+            // op3
             // 
-            this.textBox12.Enabled = false;
-            this.textBox12.ForeColor = System.Drawing.Color.Black;
-            this.textBox12.Location = new System.Drawing.Point(646, 521);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(20, 20);
-            this.textBox12.TabIndex = 78;
-            this.textBox12.Text = "Op";
+            this.op3.Enabled = false;
+            this.op3.ForeColor = System.Drawing.Color.Black;
+            this.op3.Location = new System.Drawing.Point(646, 521);
+            this.op3.Name = "op3";
+            this.op3.Size = new System.Drawing.Size(20, 20);
+            this.op3.TabIndex = 78;
+            this.op3.Text = "Op";
             // 
-            // textBox9
+            // textboxfer2
             // 
-            this.textBox9.Enabled = false;
-            this.textBox9.ForeColor = System.Drawing.Color.Black;
-            this.textBox9.Location = new System.Drawing.Point(672, 469);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(64, 20);
-            this.textBox9.TabIndex = 77;
+            this.textboxfer2.Enabled = false;
+            this.textboxfer2.ForeColor = System.Drawing.Color.Black;
+            this.textboxfer2.Location = new System.Drawing.Point(672, 469);
+            this.textboxfer2.Name = "textboxfer2";
+            this.textboxfer2.Size = new System.Drawing.Size(64, 20);
+            this.textboxfer2.TabIndex = 77;
             // 
-            // textBox8
+            // textboxlinda2
             // 
-            this.textBox8.Enabled = false;
-            this.textBox8.ForeColor = System.Drawing.Color.Black;
-            this.textBox8.Location = new System.Drawing.Point(672, 495);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(64, 20);
-            this.textBox8.TabIndex = 76;
+            this.textboxlinda2.Enabled = false;
+            this.textboxlinda2.ForeColor = System.Drawing.Color.Black;
+            this.textboxlinda2.Location = new System.Drawing.Point(672, 495);
+            this.textboxlinda2.Name = "textboxlinda2";
+            this.textboxlinda2.Size = new System.Drawing.Size(64, 20);
+            this.textboxlinda2.TabIndex = 76;
             // 
-            // textBox7
+            // textboxsietse2
             // 
-            this.textBox7.Enabled = false;
-            this.textBox7.ForeColor = System.Drawing.Color.Black;
-            this.textBox7.Location = new System.Drawing.Point(672, 521);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(64, 20);
-            this.textBox7.TabIndex = 75;
+            this.textboxsietse2.Enabled = false;
+            this.textboxsietse2.ForeColor = System.Drawing.Color.Black;
+            this.textboxsietse2.Location = new System.Drawing.Point(672, 521);
+            this.textboxsietse2.Name = "textboxsietse2";
+            this.textboxsietse2.Size = new System.Drawing.Size(64, 20);
+            this.textboxsietse2.TabIndex = 75;
             // 
-            // textBox4
+            // textboxlinda1
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.ForeColor = System.Drawing.Color.Black;
-            this.textBox4.Location = new System.Drawing.Point(521, 55);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(63, 20);
-            this.textBox4.TabIndex = 72;
-            this.textBox4.Text = "Inzet Linda:";
+            this.textboxlinda1.Enabled = false;
+            this.textboxlinda1.ForeColor = System.Drawing.Color.Black;
+            this.textboxlinda1.Location = new System.Drawing.Point(521, 55);
+            this.textboxlinda1.Name = "textboxlinda1";
+            this.textboxlinda1.Size = new System.Drawing.Size(63, 20);
+            this.textboxlinda1.TabIndex = 72;
+            this.textboxlinda1.Text = "Inzet Linda:";
             // 
-            // textBox1
+            // textboxfer1
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(521, 29);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(63, 20);
-            this.textBox1.TabIndex = 71;
-            this.textBox1.Text = "Inzet Fer:";
+            this.textboxfer1.Enabled = false;
+            this.textboxfer1.ForeColor = System.Drawing.Color.Black;
+            this.textboxfer1.Location = new System.Drawing.Point(521, 29);
+            this.textboxfer1.Name = "textboxfer1";
+            this.textboxfer1.Size = new System.Drawing.Size(63, 20);
+            this.textboxfer1.TabIndex = 71;
+            this.textboxfer1.Text = "Inzet Fer:";
             // 
-            // textBox6
+            // textboxsietse1
             // 
-            this.textBox6.Enabled = false;
-            this.textBox6.ForeColor = System.Drawing.Color.Black;
-            this.textBox6.Location = new System.Drawing.Point(521, 81);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(63, 20);
-            this.textBox6.TabIndex = 69;
-            this.textBox6.Text = "Inzet Sietse:";
+            this.textboxsietse1.Enabled = false;
+            this.textboxsietse1.ForeColor = System.Drawing.Color.Black;
+            this.textboxsietse1.Location = new System.Drawing.Point(521, 81);
+            this.textboxsietse1.Name = "textboxsietse1";
+            this.textboxsietse1.Size = new System.Drawing.Size(63, 20);
+            this.textboxsietse1.TabIndex = 69;
+            this.textboxsietse1.Text = "Inzet Sietse:";
             // 
-            // label6
+            // labeladriaan
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(11, 351);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(43, 13);
-            this.label6.TabIndex = 68;
-            this.label6.Text = "Adriaan";
+            this.labeladriaan.AutoSize = true;
+            this.labeladriaan.Location = new System.Drawing.Point(11, 351);
+            this.labeladriaan.Name = "labeladriaan";
+            this.labeladriaan.Size = new System.Drawing.Size(43, 13);
+            this.labeladriaan.TabIndex = 68;
+            this.labeladriaan.Text = "Adriaan";
             // 
             // runner4
             // 
@@ -220,14 +220,14 @@ namespace De_gokkers_groep_16
             this.label7.TabIndex = 0;
             this.label7.Text = "Gok Kantoor";
             // 
-            // label5
+            // labelbassie
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(11, 235);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 13);
-            this.label5.TabIndex = 65;
-            this.label5.Text = "Bassie";
+            this.labelbassie.AutoSize = true;
+            this.labelbassie.Location = new System.Drawing.Point(11, 235);
+            this.labelbassie.Name = "labelbassie";
+            this.labelbassie.Size = new System.Drawing.Size(38, 13);
+            this.labelbassie.TabIndex = 65;
+            this.labelbassie.Text = "Bassie";
             // 
             // runner3
             // 
@@ -242,14 +242,14 @@ namespace De_gokkers_groep_16
             this.runner3.TabIndex = 64;
             this.runner3.TabStop = false;
             // 
-            // label4
+            // labelernie
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 131);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(31, 13);
-            this.label4.TabIndex = 62;
-            this.label4.Text = "Ernie";
+            this.labelernie.AutoSize = true;
+            this.labelernie.Location = new System.Drawing.Point(9, 131);
+            this.labelernie.Name = "labelernie";
+            this.labelernie.Size = new System.Drawing.Size(31, 13);
+            this.labelernie.TabIndex = 62;
+            this.labelernie.Text = "Ernie";
             // 
             // ButtonStart
             // 
@@ -276,14 +276,14 @@ namespace De_gokkers_groep_16
             this.runner2.TabStop = false;
             this.runner2.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
-            // label3
+            // labelbert
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 29);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(26, 13);
-            this.label3.TabIndex = 59;
-            this.label3.Text = "Bert";
+            this.labelbert.AutoSize = true;
+            this.labelbert.Location = new System.Drawing.Point(10, 29);
+            this.labelbert.Name = "labelbert";
+            this.labelbert.Size = new System.Drawing.Size(26, 13);
+            this.labelbert.TabIndex = 59;
+            this.labelbert.Text = "Bert";
             // 
             // runner1
             // 
@@ -299,46 +299,46 @@ namespace De_gokkers_groep_16
             this.runner1.TabStop = false;
             this.runner1.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // radioButton7
+            // radioButtonadriaan
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(9, 86);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(61, 17);
-            this.radioButton7.TabIndex = 56;
-            this.radioButton7.Text = "Adriaan";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.radioButtonadriaan.AutoSize = true;
+            this.radioButtonadriaan.Location = new System.Drawing.Point(9, 86);
+            this.radioButtonadriaan.Name = "radioButtonadriaan";
+            this.radioButtonadriaan.Size = new System.Drawing.Size(61, 17);
+            this.radioButtonadriaan.TabIndex = 56;
+            this.radioButtonadriaan.Text = "Adriaan";
+            this.radioButtonadriaan.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // radioButtonbassie
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(9, 69);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(56, 17);
-            this.radioButton4.TabIndex = 55;
-            this.radioButton4.Text = "Bassie";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButtonbassie.AutoSize = true;
+            this.radioButtonbassie.Location = new System.Drawing.Point(9, 69);
+            this.radioButtonbassie.Name = "radioButtonbassie";
+            this.radioButtonbassie.Size = new System.Drawing.Size(56, 17);
+            this.radioButtonbassie.TabIndex = 55;
+            this.radioButtonbassie.Text = "Bassie";
+            this.radioButtonbassie.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // radioButtonernie
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(9, 46);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(49, 17);
-            this.radioButton5.TabIndex = 54;
-            this.radioButton5.Text = "Ernie";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButtonernie.AutoSize = true;
+            this.radioButtonernie.Location = new System.Drawing.Point(9, 46);
+            this.radioButtonernie.Name = "radioButtonernie";
+            this.radioButtonernie.Size = new System.Drawing.Size(49, 17);
+            this.radioButtonernie.TabIndex = 54;
+            this.radioButtonernie.Text = "Ernie";
+            this.radioButtonernie.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // radioButtonbert
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(9, 19);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(44, 17);
-            this.radioButton6.TabIndex = 53;
-            this.radioButton6.Text = "Bert";
-            this.radioButton6.UseVisualStyleBackColor = true;
-            this.radioButton6.CheckedChanged += new System.EventHandler(this.radioButton6_CheckedChanged);
+            this.radioButtonbert.AutoSize = true;
+            this.radioButtonbert.Location = new System.Drawing.Point(9, 19);
+            this.radioButtonbert.Name = "radioButtonbert";
+            this.radioButtonbert.Size = new System.Drawing.Size(44, 17);
+            this.radioButtonbert.TabIndex = 53;
+            this.radioButtonbert.Text = "Bert";
+            this.radioButtonbert.UseVisualStyleBackColor = true;
+            this.radioButtonbert.CheckedChanged += new System.EventHandler(this.radioButton6_CheckedChanged);
             // 
             // label2
             // 
@@ -358,25 +358,25 @@ namespace De_gokkers_groep_16
             this.label1.TabIndex = 51;
             this.label1.Text = "Euro op :";
             // 
-            // name_3
+            // name_sietse
             // 
-            this.name_3.AutoSize = true;
-            this.name_3.Location = new System.Drawing.Point(10, 56);
-            this.name_3.Name = "name_3";
-            this.name_3.Size = new System.Drawing.Size(54, 17);
-            this.name_3.TabIndex = 49;
-            this.name_3.Text = "Sietse";
-            this.name_3.UseVisualStyleBackColor = true;
+            this.name_sietse.AutoSize = true;
+            this.name_sietse.Location = new System.Drawing.Point(10, 56);
+            this.name_sietse.Name = "name_sietse";
+            this.name_sietse.Size = new System.Drawing.Size(54, 17);
+            this.name_sietse.TabIndex = 49;
+            this.name_sietse.Text = "Sietse";
+            this.name_sietse.UseVisualStyleBackColor = true;
             // 
-            // name_2
+            // name_linda
             // 
-            this.name_2.AutoSize = true;
-            this.name_2.Location = new System.Drawing.Point(10, 82);
-            this.name_2.Name = "name_2";
-            this.name_2.Size = new System.Drawing.Size(45, 17);
-            this.name_2.TabIndex = 48;
-            this.name_2.Text = "Lida";
-            this.name_2.UseVisualStyleBackColor = true;
+            this.name_linda.AutoSize = true;
+            this.name_linda.Location = new System.Drawing.Point(10, 82);
+            this.name_linda.Name = "name_linda";
+            this.name_linda.Size = new System.Drawing.Size(45, 17);
+            this.name_linda.TabIndex = 48;
+            this.name_linda.Text = "Lida";
+            this.name_linda.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -384,14 +384,14 @@ namespace De_gokkers_groep_16
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.textbox5);
-            this.panel1.Controls.Add(this.textBox11);
+            this.panel1.Controls.Add(this.op2);
             this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textbox69);
+            this.panel1.Controls.Add(this.betFer);
             this.panel1.Controls.Add(this.numericUpDown1);
             this.panel1.Controls.Add(this.ButtonGamble);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox6);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.textboxlinda1);
+            this.panel1.Controls.Add(this.textboxsietse1);
+            this.panel1.Controls.Add(this.textboxfer1);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.ButtonStart);
             this.panel1.Location = new System.Drawing.Point(15, 440);
@@ -410,10 +410,10 @@ namespace De_gokkers_groep_16
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton6);
-            this.groupBox1.Controls.Add(this.radioButton5);
-            this.groupBox1.Controls.Add(this.radioButton7);
-            this.groupBox1.Controls.Add(this.radioButton4);
+            this.groupBox1.Controls.Add(this.radioButtonbert);
+            this.groupBox1.Controls.Add(this.radioButtonernie);
+            this.groupBox1.Controls.Add(this.radioButtonadriaan);
+            this.groupBox1.Controls.Add(this.radioButtonbassie);
             this.groupBox1.Location = new System.Drawing.Point(282, 81);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(100, 116);
@@ -424,12 +424,12 @@ namespace De_gokkers_groep_16
             // groupBox2
             // 
             this.groupBox2.CausesValidation = false;
-            this.groupBox2.Controls.Add(this.name_1);
+            this.groupBox2.Controls.Add(this.name_fer);
             this.groupBox2.Controls.Add(this.LindaMoney);
             this.groupBox2.Controls.Add(this.SietseMoney);
             this.groupBox2.Controls.Add(this.FerMoney);
-            this.groupBox2.Controls.Add(this.name_2);
-            this.groupBox2.Controls.Add(this.name_3);
+            this.groupBox2.Controls.Add(this.name_linda);
+            this.groupBox2.Controls.Add(this.name_sietse);
             this.groupBox2.Location = new System.Drawing.Point(22, 81);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(102, 108);
@@ -437,15 +437,15 @@ namespace De_gokkers_groep_16
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "gokkers";
             // 
-            // name_1
+            // name_fer
             // 
-            this.name_1.AutoSize = true;
-            this.name_1.Location = new System.Drawing.Point(10, 32);
-            this.name_1.Name = "name_1";
-            this.name_1.Size = new System.Drawing.Size(40, 17);
-            this.name_1.TabIndex = 82;
-            this.name_1.Text = "Fer";
-            this.name_1.UseVisualStyleBackColor = true;
+            this.name_fer.AutoSize = true;
+            this.name_fer.Location = new System.Drawing.Point(10, 32);
+            this.name_fer.Name = "name_fer";
+            this.name_fer.Size = new System.Drawing.Size(40, 17);
+            this.name_fer.TabIndex = 82;
+            this.name_fer.Text = "Fer";
+            this.name_fer.UseVisualStyleBackColor = true;
             // 
             // LindaMoney
             // 
@@ -493,14 +493,14 @@ namespace De_gokkers_groep_16
             this.textBox3.Text = "0";
             this.textBox3.Click += new System.EventHandler(this.label10_Click);
             // 
-            // textbox69
+            // betFer
             // 
-            this.textbox69.AutoSize = true;
-            this.textbox69.Location = new System.Drawing.Point(590, 35);
-            this.textbox69.Name = "textbox69";
-            this.textbox69.Size = new System.Drawing.Size(13, 13);
-            this.textbox69.TabIndex = 87;
-            this.textbox69.Text = "0";
+            this.betFer.AutoSize = true;
+            this.betFer.Location = new System.Drawing.Point(590, 35);
+            this.betFer.Name = "betFer";
+            this.betFer.Size = new System.Drawing.Size(13, 13);
+            this.betFer.TabIndex = 87;
+            this.betFer.Text = "0";
             // 
             // numericUpDown1
             // 
@@ -524,50 +524,50 @@ namespace De_gokkers_groep_16
             0,
             0});
             // 
-            // pictureBox2
+            // roadbert
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 26);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(767, 88);
-            this.pictureBox2.TabIndex = 82;
-            this.pictureBox2.TabStop = false;
+            this.roadbert.Image = global::De_gokkers_groep_16.Properties.Resources.debaan;
+            this.roadbert.Location = new System.Drawing.Point(0, 26);
+            this.roadbert.Name = "roadbert";
+            this.roadbert.Size = new System.Drawing.Size(767, 88);
+            this.roadbert.TabIndex = 82;
+            this.roadbert.TabStop = false;
             // 
-            // pictureBox6
+            // roadadriaan
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(2, 346);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(767, 88);
-            this.pictureBox6.TabIndex = 83;
-            this.pictureBox6.TabStop = false;
+            this.roadadriaan.Image = ((System.Drawing.Image)(resources.GetObject("roadadriaan.Image")));
+            this.roadadriaan.Location = new System.Drawing.Point(2, 336);
+            this.roadadriaan.Name = "roadadriaan";
+            this.roadadriaan.Size = new System.Drawing.Size(767, 88);
+            this.roadadriaan.TabIndex = 83;
+            this.roadadriaan.TabStop = false;
             // 
-            // pictureBox8
+            // roadbassie
             // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(0, 235);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(767, 88);
-            this.pictureBox8.TabIndex = 84;
-            this.pictureBox8.TabStop = false;
+            this.roadbassie.Image = ((System.Drawing.Image)(resources.GetObject("roadbassie.Image")));
+            this.roadbassie.Location = new System.Drawing.Point(0, 235);
+            this.roadbassie.Name = "roadbassie";
+            this.roadbassie.Size = new System.Drawing.Size(767, 88);
+            this.roadbassie.TabIndex = 84;
+            this.roadbassie.TabStop = false;
             // 
-            // pictureBox9
+            // roadernie
             // 
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(0, 131);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(767, 88);
-            this.pictureBox9.TabIndex = 85;
-            this.pictureBox9.TabStop = false;
+            this.roadernie.Image = ((System.Drawing.Image)(resources.GetObject("roadernie.Image")));
+            this.roadernie.Location = new System.Drawing.Point(0, 131);
+            this.roadernie.Name = "roadernie";
+            this.roadernie.Size = new System.Drawing.Size(767, 88);
+            this.roadernie.TabIndex = 85;
+            this.roadernie.TabStop = false;
             // 
-            // pictureBox10
+            // finish
             // 
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(698, -1);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(38, 435);
-            this.pictureBox10.TabIndex = 86;
-            this.pictureBox10.TabStop = false;
+            this.finish.Image = ((System.Drawing.Image)(resources.GetObject("finish.Image")));
+            this.finish.Location = new System.Drawing.Point(698, -1);
+            this.finish.Name = "finish";
+            this.finish.Size = new System.Drawing.Size(38, 435);
+            this.finish.TabIndex = 86;
+            this.finish.TabStop = false;
             // 
             // Form1
             // 
@@ -578,23 +578,23 @@ namespace De_gokkers_groep_16
             this.Controls.Add(this.runner3);
             this.Controls.Add(this.runner2);
             this.Controls.Add(this.runner1);
-            this.Controls.Add(this.pictureBox10);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.finish);
+            this.Controls.Add(this.op1);
+            this.Controls.Add(this.op3);
+            this.Controls.Add(this.textboxfer2);
+            this.Controls.Add(this.textboxlinda2);
+            this.Controls.Add(this.textboxsietse2);
+            this.Controls.Add(this.labeladriaan);
+            this.Controls.Add(this.labelbassie);
+            this.Controls.Add(this.labelernie);
+            this.Controls.Add(this.labelbert);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.roadbert);
+            this.Controls.Add(this.roadernie);
+            this.Controls.Add(this.roadbassie);
+            this.Controls.Add(this.roadadriaan);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.runner4)).EndInit();
@@ -608,11 +608,11 @@ namespace De_gokkers_groep_16
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roadbert)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roadadriaan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roadbassie)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roadernie)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.finish)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -630,51 +630,51 @@ namespace De_gokkers_groep_16
 
         #endregion
 
-        internal System.Windows.Forms.Button ButtonGamble;
-        internal System.Windows.Forms.TextBox textBox10;
-        internal System.Windows.Forms.TextBox textBox11;
-        internal System.Windows.Forms.TextBox textBox12;
-        internal System.Windows.Forms.TextBox textBox9;
-        internal System.Windows.Forms.TextBox textBox8;
-        internal System.Windows.Forms.TextBox textBox7;
-        internal System.Windows.Forms.TextBox textBox4;
-        internal System.Windows.Forms.TextBox textBox1;
-        internal System.Windows.Forms.TextBox textBox6;
-        internal System.Windows.Forms.Label label6;
+        internal System.Windows.Forms.Button  ButtonGamble;
+        internal System.Windows.Forms.TextBox op1;
+        internal System.Windows.Forms.TextBox op2;
+        internal System.Windows.Forms.TextBox op3;
+        internal System.Windows.Forms.TextBox textboxfer2;
+        internal System.Windows.Forms.TextBox textboxlinda2;
+        internal System.Windows.Forms.TextBox textboxsietse2;
+        internal System.Windows.Forms.TextBox textboxlinda1;
+        internal System.Windows.Forms.TextBox textboxfer1;
+        internal System.Windows.Forms.TextBox textboxsietse1;
+        internal System.Windows.Forms.Label labeladriaan;
         internal System.Windows.Forms.PictureBox runner4;
         internal System.Windows.Forms.Label label7;
-        internal System.Windows.Forms.Label label5;
+        internal System.Windows.Forms.Label labelbassie;
         internal System.Windows.Forms.PictureBox runner3;
-        internal System.Windows.Forms.Label label4;
+        internal System.Windows.Forms.Label labelernie;
         internal System.Windows.Forms.Button ButtonStart;
         internal System.Windows.Forms.PictureBox runner2;
-        internal System.Windows.Forms.Label label3;
+        internal System.Windows.Forms.Label labelbert;
         internal System.Windows.Forms.PictureBox runner1;
-        internal System.Windows.Forms.RadioButton radioButton7;
-        internal System.Windows.Forms.RadioButton radioButton4;
-        internal System.Windows.Forms.RadioButton radioButton5;
-        internal System.Windows.Forms.RadioButton radioButton6;
+        internal System.Windows.Forms.RadioButton radioButtonadriaan;
+        internal System.Windows.Forms.RadioButton radioButtonbassie;
+        internal System.Windows.Forms.RadioButton radioButtonernie;
+        internal System.Windows.Forms.RadioButton radioButtonbert;
         internal System.Windows.Forms.Label label2;
         internal System.Windows.Forms.Label label1;
-        internal System.Windows.Forms.RadioButton name_3;
-        internal System.Windows.Forms.RadioButton name_2;
+        internal System.Windows.Forms.RadioButton name_sietse;
+        internal System.Windows.Forms.RadioButton name_linda;
         internal System.Windows.Forms.Panel panel1;
         internal System.Windows.Forms.TextBox LindaMoney;
         internal System.Windows.Forms.TextBox SietseMoney;
         internal System.Windows.Forms.TextBox FerMoney;
         internal System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label8;
-        internal System.Windows.Forms.RadioButton name_1;
+        internal System.Windows.Forms.RadioButton name_fer;
         internal System.Windows.Forms.GroupBox groupBox2;
         internal System.Windows.Forms.Label textbox5;
         internal System.Windows.Forms.Label textBox3;
-        internal System.Windows.Forms.Label textbox69;
+        internal System.Windows.Forms.Label betFer;
         internal System.Windows.Forms.GroupBox groupBox1;
-        internal System.Windows.Forms.PictureBox pictureBox2;
-        internal System.Windows.Forms.PictureBox pictureBox6;
-        internal System.Windows.Forms.PictureBox pictureBox8;
-        internal System.Windows.Forms.PictureBox pictureBox9;
-        internal System.Windows.Forms.PictureBox pictureBox10;
+        internal System.Windows.Forms.PictureBox roadbert;
+        internal System.Windows.Forms.PictureBox roadadriaan;
+        internal System.Windows.Forms.PictureBox roadbassie;
+        internal System.Windows.Forms.PictureBox roadernie;
+        internal System.Windows.Forms.PictureBox finish;
         internal System.Windows.Forms.TextBox textBoxWinner;
     }
 }
