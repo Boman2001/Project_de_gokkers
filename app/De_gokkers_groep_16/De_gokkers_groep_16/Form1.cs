@@ -203,6 +203,7 @@ namespace De_gokkers_groep_16
             bet[0].clearBet();
             bet[1].clearBet();
             bet[2].clearBet();
+            ButtonStart.Hide();
         }
 
         private void radioButton6_CheckedChanged(object sender, EventArgs e)

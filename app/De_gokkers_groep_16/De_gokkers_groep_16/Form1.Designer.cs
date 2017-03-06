@@ -103,6 +103,7 @@ namespace De_gokkers_groep_16
             // 
             // textBox10
             // 
+            this.textBox10.Enabled = false;
             this.textBox10.ForeColor = System.Drawing.Color.Black;
             this.textBox10.Location = new System.Drawing.Point(646, 469);
             this.textBox10.Name = "textBox10";
@@ -112,6 +113,7 @@ namespace De_gokkers_groep_16
             // 
             // textBox11
             // 
+            this.textBox11.Enabled = false;
             this.textBox11.ForeColor = System.Drawing.Color.Black;
             this.textBox11.Location = new System.Drawing.Point(631, 54);
             this.textBox11.Name = "textBox11";
@@ -122,6 +124,7 @@ namespace De_gokkers_groep_16
             // 
             // textBox12
             // 
+            this.textBox12.Enabled = false;
             this.textBox12.ForeColor = System.Drawing.Color.Black;
             this.textBox12.Location = new System.Drawing.Point(646, 521);
             this.textBox12.Name = "textBox12";
@@ -158,6 +161,7 @@ namespace De_gokkers_groep_16
             // 
             // textBox4
             // 
+            this.textBox4.Enabled = false;
             this.textBox4.ForeColor = System.Drawing.Color.Black;
             this.textBox4.Location = new System.Drawing.Point(521, 55);
             this.textBox4.Name = "textBox4";
@@ -167,6 +171,7 @@ namespace De_gokkers_groep_16
             // 
             // textBox1
             // 
+            this.textBox1.Enabled = false;
             this.textBox1.ForeColor = System.Drawing.Color.Black;
             this.textBox1.Location = new System.Drawing.Point(521, 29);
             this.textBox1.Name = "textBox1";
@@ -176,6 +181,7 @@ namespace De_gokkers_groep_16
             // 
             // textBox6
             // 
+            this.textBox6.Enabled = false;
             this.textBox6.ForeColor = System.Drawing.Color.Black;
             this.textBox6.Location = new System.Drawing.Point(521, 81);
             this.textBox6.Name = "textBox6";
