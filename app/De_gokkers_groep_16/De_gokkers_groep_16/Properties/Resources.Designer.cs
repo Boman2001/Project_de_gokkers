@@ -22,7 +22,6 @@ namespace De_gokkers_groep_16.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-
     internal class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
@@ -64,21 +63,28 @@ namespace De_gokkers_groep_16.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-         internal static System.Drawing.Bitmap runnings
-         {
+        internal static System.Drawing.Bitmap debaan {
             get {
-                object obj = ResourceManager.GetObject("runnings", resourceCulture);
+                object obj = ResourceManager.GetObject("debaan", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
-         }
+        }
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap stokstaand
-        {
-            get
-            {
+        internal static System.Drawing.Bitmap runnings {
+            get {
+                object obj = ResourceManager.GetObject("runnings", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stokstaand {
+            get {
                 object obj = ResourceManager.GetObject("stokstaand", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
