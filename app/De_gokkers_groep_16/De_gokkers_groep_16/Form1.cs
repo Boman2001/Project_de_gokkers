@@ -21,11 +21,38 @@ namespace De_gokkers_groep_16
         internal Guy sietse;
         internal Bet[] bet = new Bet[3];
         internal string winner;
-        Random step = new Random();
-        Random r;
+        internal Random step = new Random();
+        internal Random r;
+
+        public string wiener;
+        public Form1()
+        {
+            InitializeComponent();
+            // initaliseert de elementen van de form
+            //players en racers maken 
+            fer = new Guy("Fer", 45, textbox69, textBox9);
+            lida = new Guy("Lidy", 75, textBox3, textBox8);
+            sietse = new Guy("Sietse", 50, textbox5, textBox7);
+
+            racers[0] = new Suricate("Bert", runner1, pictureBox2);
+            racers[1] = new Suricate("Ernie", runner2, pictureBox2);
+            racers[2] = new Suricate("Bassie", runner3, pictureBox2);
+            racers[3] = new Suricate("Adriaan", runner4, pictureBox2);
+            //waardes geven aaan de racers 
+            r = new Random();
+
+            fer.displayMoney(FerMoney);
+            lida.displayMoney(LindaMoney);
+            sietse.displayMoney(SietseMoney);
+
+            ButtonStart.Hide();
+            //verbergt de startknop zodat je niet kan beginnen totdat iedereen geboden heeft
+
+        }
 
 
-     
+
+
 
 
 
@@ -42,6 +69,7 @@ namespace De_gokkers_groep_16
             TextBox ferText = textBox9;
             TextBox sietseText = textBox7;
             TextBox lindaText = textBox8;
+            //spelers de textboxgeven waarin hun bod komt te staan 
             fer.displayMoney(FerMoney);
             lida.displayMoney(LindaMoney);
             sietse.displayMoney(SietseMoney);
@@ -50,10 +78,11 @@ namespace De_gokkers_groep_16
 
             if (name_1.Checked)
             {
-
+                // leest het input veldje en verwerkt het
                 decimal wed = numericUpDown1.Value;
-                int vedt = Convert.ToInt32(wed);
-                bet[0] = new Bet(vedt, fer);
+                // convert
+                int wedInt = Convert.ToInt32(wed);
+                bet[0] = new Bet(wedInt, fer);
                 displayRacer(ferText, fer);
                 fer.displayMoney(FerMoney);
                 bet[0].Lose();
@@ -66,8 +95,8 @@ namespace De_gokkers_groep_16
             {
                 
                 decimal wed = numericUpDown1.Value;
-                int vedt = Convert.ToInt32(wed);
-                bet[1] = new Bet(vedt, sietse);
+                int wedInt = Convert.ToInt32(wed);
+                bet[1] = new Bet(wedInt, sietse);
                 displayRacer(sietseText,fer);
                 sietse.displayMoney(SietseMoney);
                 bet[1].Lose();
@@ -78,8 +107,8 @@ namespace De_gokkers_groep_16
             {
                 
                 decimal wed = numericUpDown1.Value;
-                int vedt = Convert.ToInt32(wed);
-                bet[2] = new Bet(vedt, lida);
+                int wedInt = Convert.ToInt32(wed);
+                bet[2] = new Bet(wedInt, lida);
                 lida.displayMoney(LindaMoney);
                 displayRacer(lindaText, lida);
                 bet[2].Lose();
@@ -343,7 +372,7 @@ namespace De_gokkers_groep_16
                 racers[i].MyPictureBox.Location = new Point(2, racers[i].MyPictureBox.Location.Y);
             }
 
-
+            ButtonStart.Hide();
 
 
 

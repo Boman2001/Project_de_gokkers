@@ -33,3 +33,5 @@ C:\Users\jabba\OneDrive\Documents\GitHub\Project_de_gokkers\app\De_gokkers_groep
 C:\Users\jabba\OneDrive\Documents\GitHub\Project_de_gokkers\app\De_gokkers_groep_16\De_gokkers_groep_16\obj\Debug\De_gokkers_groep_16.Form1.resources
 C:\Users\jabba\OneDrive\Documents\GitHub\Project_de_gokkers\app\De_gokkers_groep_16\De_gokkers_groep_16\obj\Debug\De_gokkers_groep_16.Properties.Resources.resources
 C:\Users\jabba\OneDrive\Documents\GitHub\Project_de_gokkers\app\De_gokkers_groep_16\De_gokkers_groep_16\obj\Debug\De_gokkers_groep_16.csproj.GenerateResource.Cache
+C:\Users\jabba\OneDrive\Documents\GitHub\Project_de_gokkers\app\De_gokkers_groep_16\De_gokkers_groep_16\bin\Debug\De_gokkers_groep_16.exe
+C:\Users\jabba\OneDrive\Documents\GitHub\Project_de_gokkers\app\De_gokkers_groep_16\De_gokkers_groep_16\bin\Debug\De_gokkers_groep_16.pdb
