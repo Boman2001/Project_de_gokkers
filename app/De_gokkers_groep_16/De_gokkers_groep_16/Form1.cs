@@ -25,30 +25,7 @@ namespace De_gokkers_groep_16
         Random r;
 
 
-        public string wiener;
-        public Form1()
-        {
-            InitializeComponent();
-            //pbBert.BackColor = Color.Transparent;
-            //players en racers maken 
-            fer = new Guy("Fer", 45, textbox69, textBox9);
-            lida = new Guy("Lidy", 75, textBox3, textBox8);
-            sietse = new Guy("Sietse", 50, textbox5, textBox7);
-
-            racers[0] = new Suricate("Bert", runner1,pictureBox2);
-            racers[1] = new Suricate("Ernie", runner2, pictureBox2);
-            racers[2] = new Suricate("Bassie", runner3, pictureBox2);
-            racers[3] = new Suricate("Adriaan", runner4, pictureBox2);
-
-            r = new Random();
-
-            fer.displayMoney(FerMoney);
-            lida.displayMoney(LindaMoney);
-            sietse.displayMoney(SietseMoney);
-            ButtonStart.Hide();
-
-        }
-
+     
 
 
 
@@ -121,9 +98,9 @@ namespace De_gokkers_groep_16
 
         internal void displayRacer(TextBox player,Guy Bettor)
         {
-            string bert = "Bert";
-            string ernie = "Ernie";
-            string bassie = "Bassie";
+            string bert    = "Bert"   ;
+            string ernie   = "Ernie"  ;
+            string bassie  = "Bassie" ;
             string adriaan = "Adriaan";
 
             if (radioButton6.Checked)
