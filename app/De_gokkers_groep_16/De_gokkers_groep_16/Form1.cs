@@ -111,7 +111,11 @@ namespace De_gokkers_groep_16
             fer.displayMoney(FerMoney);
             lida.displayMoney(LindaMoney);
             sietse.displayMoney(SietseMoney);
-            ButtonStart.Show();
+            if (textbox69.Text != "0" && textBox3.Text != "0" && textbox5.Text !="0" )
+            {
+                ButtonStart.Show();
+
+            }
 
         }
 
@@ -173,10 +177,20 @@ namespace De_gokkers_groep_16
         private void ButtonStart_Click(object sender, EventArgs e)
         {
             ButtonStart.Hide();
+            for (int i2 = 0; i2 < racers.Length; i2++)
+            {
+                racers[i2].MyPictureBox.Image = De_gokkers_groep_16.Properties.Resources.runnings;
+                racers[i2].MyPictureBox.Refresh();
+            }
             ButtonGamble.Hide();
             raceStart(pictureBox2, racers, textBoxWinner);
             Thread.Sleep(1000);
             backToStart(pictureBox2, racers);
+            for (int i2 = 0; i2 < racers.Length; i2++)
+            {
+                racers[i2].MyPictureBox.Image = De_gokkers_groep_16.Properties.Resources.stokstaand;
+                racers[i2].MyPictureBox.Refresh();
+            }
             if (fer.MyBetstr == textBoxWinner.Text)
             {
                 //int money = Convert.ToInt32(textbox69.Text);
@@ -196,7 +210,7 @@ namespace De_gokkers_groep_16
                 //sietse.Cash += money * 2;
                 bet[2].PayOut(sietse);
             }
-            
+
             fer.displayMoney(FerMoney);
             lida.displayMoney(LindaMoney);
             sietse.displayMoney(SietseMoney);
@@ -231,6 +245,7 @@ namespace De_gokkers_groep_16
             bool winner1 = false;
             bool winner2 = false;
             bool winner3 = false;
+
 
             do
             {

@@ -38,7 +38,7 @@ namespace De_gokkers_groep_16
 
                 int step = steps.Next(1, 8);
                 total += step;
-                Thread.Sleep(25);
+                Thread.Sleep(5);
                 //this.MyPictureBox.Location = new Point(MyPictureBox.Location.X +, this.MyPictureBox.Location.Y);
                 MyPictureBox.Location = new Point(this.MyPictureBox.Location.X + step, this.MyPictureBox.Location.Y);
                 Application.DoEvents();

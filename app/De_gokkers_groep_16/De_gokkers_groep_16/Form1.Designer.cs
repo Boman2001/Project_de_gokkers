@@ -473,18 +473,18 @@ namespace De_gokkers_groep_16
             this.textbox5.AutoSize = true;
             this.textbox5.Location = new System.Drawing.Point(590, 84);
             this.textbox5.Name = "textbox5";
-            this.textbox5.Size = new System.Drawing.Size(41, 13);
+            this.textbox5.Size = new System.Drawing.Size(13, 13);
             this.textbox5.TabIndex = 89;
-            this.textbox5.Text = "label11";
+            this.textbox5.Text = "0";
             // 
             // textBox3
             // 
             this.textBox3.AutoSize = true;
             this.textBox3.Location = new System.Drawing.Point(590, 61);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(41, 13);
+            this.textBox3.Size = new System.Drawing.Size(13, 13);
             this.textBox3.TabIndex = 88;
-            this.textBox3.Text = "label10";
+            this.textBox3.Text = "0";
             this.textBox3.Click += new System.EventHandler(this.label10_Click);
             // 
             // textbox69
@@ -492,9 +492,9 @@ namespace De_gokkers_groep_16
             this.textbox69.AutoSize = true;
             this.textbox69.Location = new System.Drawing.Point(590, 35);
             this.textbox69.Name = "textbox69";
-            this.textbox69.Size = new System.Drawing.Size(35, 13);
+            this.textbox69.Size = new System.Drawing.Size(13, 13);
             this.textbox69.TabIndex = 87;
-            this.textbox69.Text = "label9";
+            this.textbox69.Text = "0";
             // 
             // numericUpDown1
             // 
